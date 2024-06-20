@@ -1,0 +1,59 @@
+@mixin odd-row-background($color) {
+    tbody {
+      tr:nth-of-type(odd) {
+        background-color: $color;
+      }
+    }
+  }
+
+  .table-striped {
+    @include odd-row-background($thead-light);
+  }
+  
+  .table-striped.table-dark {
+    @include odd-row-background(grey);
+  }
+
+.table-bordered{
+    border-collapse: collapse;
+    border: $table-border-width solid $table-border-color;
+    th, td {
+        border: $table-border-width solid $table-border-color;
+      }
+}
+
+@mixin table-hover($hover-color) {
+    tbody tr:hover{
+        background-color: $hover-color;
+      
+    }
+}
+    .table-hover {
+        @include table-hover($table-hover-bg);
+      }
+      
+      .table-hover.table-dark {
+        @include table-hover($table-dark-border-color);
+      }
+  
+.table-sm{
+    th,
+    td {
+      padding: $table-padding-sm;
+    }
+}
+
+
+.thead-light{
+    background-color: $thead-light;
+    color:$body-color ;
+}
+.thead-dark{
+    background-color: $body-color;
+    color:$text-white ;
+}
+
+ .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+  }

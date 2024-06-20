@@ -1,0 +1,38 @@
+@use "sass:math";
+@use "sass:map";
+
+
+$colors:(
+  "active":$active-color,
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $success-color,
+  "danger": $danger-color,
+  "warning": $warning-color,
+  "info": $info-color,
+  "light": $light-color,
+  "dark": $dark-color,
+);
+
+
+$warm-colors:(
+  "primary": $bg-primary-color,
+  "success": $bg-success-color,
+  "danger": $bg-danger-color,
+  "warning": $bg-warning-color,
+  "info": $bg-info-color,
+);
+
+
+@each $key, $value in $colors {
+    .table-#{$key} {
+      background-color: $value;
+    }
+  }
+
+  @each $key, $value in $warm-colors {
+    .bg-#{$key} {
+      background-color: $value;
+      color: $text-white;
+    }
+  }
