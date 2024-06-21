@@ -27,12 +27,24 @@ $warm-colors:(
 @each $key, $value in $colors {
     .table-#{$key} {
       background-color: $value;
+
+      @if($key == "dark"){
+        color:map-get($colors, "light");
+      }
+      @else{
+        color:map-get($colors, "dark");
+      }
     }
   }
 
   @each $key, $value in $warm-colors {
     .bg-#{$key} {
       background-color: $value;
-      color: $text-white;
+      @if($key == null){
+        color:map-get($colors, "light");
+      }
+      @else{
+        color:map-get($colors, "dark");
+      }
     }
   }

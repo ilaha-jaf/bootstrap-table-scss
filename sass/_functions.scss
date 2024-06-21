@@ -1,5 +1,3 @@
-@function light-component($color) {
-    $complement: complement($color);
-    $ligth-complement: lighten($complement, 30%);
-    @return $ligth-complement;
+@function get-color($color-name) {
+  @return map-get($colors, $color-name);
   }

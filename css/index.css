@@ -56,63 +56,72 @@ body {
 
 .table-active {
   background-color: rgba(0, 0, 0, 0.075);
+  color: #212529;
 }
 
 .table-primary {
   background-color: #b8daff;
+  color: #212529;
 }
 
 .table-secondary {
   background-color: #d6d8db;
+  color: #212529;
 }
 
 .table-success {
   background-color: #c3e6cb;
+  color: #212529;
 }
 
 .table-danger {
   background-color: #f5c6cb;
+  color: #212529;
 }
 
 .table-warning {
   background-color: #ffeeba;
+  color: #212529;
 }
 
 .table-info {
   background-color: #bee5eb;
+  color: #212529;
 }
 
 .table-light {
   background-color: #fdfdfe;
+  color: #212529;
 }
 
 .table-dark {
   background-color: #212529;
+  color: #fdfdfe;
 }
 
 .bg-primary {
   background-color: #007bff;
-  color: #fff;
+  color: #212529;
 }
 
 .bg-success {
   background-color: #28a745;
-  color: #fff;
+  color: #212529;
 }
 
 .bg-danger {
   background-color: #17a2b8;
-  color: #fff;
+  color: #212529;
 }
 
 .bg-warning {
   background-color: #ffc107;
-  color: #fff;
+  color: #212529;
 }
 
 .bg-info {
   background-color: #dc3545;
-  color: #fff;
+  color: #212529;
 }
 
 @media (min-width: 480px) {
